@@ -1,0 +1,1028 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #f1f5f8;
+}
+/*----------header start-----*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header .logo{
+    margin-top: 5px;
+    padding-left: 90px;
+}
+.header .menu svg{
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.header .searchbox{
+    margin-top: 9px;
+    height: 55px;
+    width: 800px;
+    background-color: white;
+    border-radius: 10px ;
+    display: flex;
+    background-color:rgb(230, 242, 247);
+}
+
+.header .searchbox .search input{
+    border: none;
+    outline: none;
+    width: 700px;
+    font-size: 21px;
+    padding-left: 10px;
+    margin-top: 19px;
+    background-color:rgb(230, 242, 247);
+}
+
+.header .searchbox .svg svg{
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 14px;
+    opacity: 0.8;
+    
+}
+ 
+.header .icons ul{
+    display: flex;
+    margin-top: 15px;
+}
+
+.header .icons ul li{
+    padding-right: 40px;
+}
+
+.header .icons ul li svg{
+    height: 38px;
+    width: 38px;
+}
+
+.header .icons ul  .text{
+   
+    font-size: 19px;
+    font-weight: 600;
+
+    
+}
+.header .icons ul  .text:hover{
+    border-bottom: 1px solid blue;
+    
+    transition: all 0.2s linear;
+}
+
+.text {
+    text-align: center;         /* Align text to the left */
+    padding-top: 5px;        /* Space between icons and text */
+}
+
+.header .icons ul .text a{
+    text-align: center;
+    align-items: center;
+    justify-content: bottom;
+    color: black;
+    margin-top: 5px;
+}
+@media screen and (min-width:768px){
+    .header .menu svg{
+       display: none;
+    }
+    .logo img{
+        padding-right: 0;
+        
+    }
+}
+@media screen and (max-width:576px) {
+    .header{
+        margin-top: 0;
+    }
+    .header .searchbox{
+        display: none;
+    }
+    .searchbox .search input{
+        display: none; 
+    }
+    .svg svg{
+        display: none;
+    }
+    .logo img{
+        height: 50px;
+        width: 100px;
+        padding-right: 60px;
+        
+    }
+    .header .logo{
+        padding: 0;
+        margin: 0;
+    }
+    .header .icons ul li svg{
+        width: 26px;
+        height: 26px;
+        padding-left: 0;
+    }
+    .header .icons ul li{
+        padding-right: 25px;
+    }
+    .header .icons ul  .text{
+        display: none;
+    }
+    .header .menu svg{
+        display: not none;
+        padding-left: 10px;
+    }
+
+
+}
+/*----------header end-----*/
+/*---------Products start-----*/
+
+.products{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color:white;
+    font-family: 'Roboto' ;
+    border-radius: 5px;
+}
+
+.products .product-box{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.product-items a img{
+    object-fit: contain;
+    width: 125px;
+    height: 125px;
+    
+    
+}
+
+.product-items .image-app{
+    margin-left: 30px;
+}
+
+.product-items .image-plane{
+    margin-right: 40px;
+    
+}
+    
+.product-items a img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+
+
+.product-items .content{
+    align-items: center;
+    color:black;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 60px;
+    min-width: 10px;
+    margin-left: 30px;
+
+}
+
+.product-items .content-home{
+    display: block;
+    align-items: center;
+    color:black;
+    justify-content: center;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.product-items .content-plane{
+    display: block;
+    align-items: center;
+    color:black;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 60px;
+    min-width: 10px;
+    margin-left: 40px;
+}
+
+.product-items .content-teddy{
+    display: block;
+    align-items: center;
+    color:black;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 60px;
+    min-width: 10px;
+    margin-left: 25px;
+}
+
+.product-items .content-app{
+    color:black;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 60px;
+    min-width: 10px;
+    margin-left: 45px;
+}
+
+.product-items .content-bike{
+    color:black;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 100px;
+    min-width: 10px;
+    margin-left: 45px;
+}
+
+@media screen and (max-width:576px) {
+    .products {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .product-box {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap into multiple rows */
+        gap: 10px; /* Adds spacing between items */
+        justify-content: space-around; /* Adjusts alignment for a balanced layout */
+        max-width: 100%;
+      }
+      
+      .product-items {
+        flex: 1 1 calc(20% - 20px); /* Ensures 5 items per row, adjust as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .product-items a img{
+        height: 70px;
+        width: 70px;
+      }
+      .product-items .content{
+        margin: 0;
+      }
+      .product-items .content-home{
+        margin: 0;
+      }
+      .product-items .content-plane{
+        margin: 0;
+      }
+      .product-items .content-teddy{
+        margin: 0;
+      }
+      .product-items .content-bike{
+        margin: 0;
+      }
+      .product-items .content-app{
+        margin: 0;
+      }
+      .product-items .image-app{
+        margin:0;
+    }
+    
+    .product-items .image-plane{
+        margin:0;
+        
+    }
+    .product-items .image-teddy{
+        display: none;
+    }
+    .product-items .content-teddy{
+        display: none;
+      }
+    
+      
+}
+/*----------products end-----*/
+/*----------advertisement start-----*/
+
+.ad{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 95%;
+    margin-top: 20px;
+    background-color: #f1f5f8;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+.advertisement{
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+}
+.ad-item{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:576px) {
+    .ad{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .ad-item{
+        height: 100px;
+    }
+}
+/*----------advertisement end-----*/
+/*-------------Shoe start-------------*/
+.shoes{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.shoes .big-box{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    display: flex; /* Use flexbox to align the products in a row */
+    gap: 20px; /* Space between products */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Ensure products stay in a single line */
+    
+}
+ .best-deal p{
+    font-size: 30px;
+    font-family: 'Roboto' ;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    padding-top: 30px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.shoes .big-box .shoe-box{
+    height: 400px;
+    width: 240px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.2s ease;
+    
+
+}
+.big-box .shoe-box:hover{
+    box-shadow: 0,3px 5px rgba(0,0,0,0.2);
+    transform: scale(1.1); 
+    transition: all 0.2s linear;
+}
+
+
+.shoes .big-box .shoe-box img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.shoes .big-box .shoe-box .content{
+    padding-left: 20px;
+    font-family: 'Roboto';
+    padding-top: 10px;
+}
+
+.content .brand{
+    color: #888;
+    opacity: 0.6;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.prize{
+    font-size: 22px;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.offer{
+    color: rgb(1, 107, 1);
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.hot{
+    margin-left: 15px;
+    background-color: #bffdff;
+    opacity: 0.8;
+    display: inline-block;
+    padding: 8px 5px;
+    color: rgb(1, 107, 1) ;
+    font-weight: 600;
+    border-radius:5px ;
+}
+
+.size .ss{
+    color: #888;
+    font-weight: 600;
+}
+
+.size .size-no{
+    font-weight: 600;
+}
+
+.size {
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 19px;
+    padding-left: 10px;
+
+}
+.content s {
+    color: #888;
+    text-decoration: line-through;
+}
+@media screen and (max-width:576px) {
+    .shoes{
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+    .shoes .big-box{
+        height: 370px;
+        width: 100%;
+    }
+    .best-deal p{
+        font-size: 20px;
+    }
+    .shoes .big-box .shoe-box{
+        height: 315px;
+        width: 250px;
+        margin-left: 2px;
+        
+    }
+    .shoes .big-box .shoe-box img{
+        height: 150px;
+        width: 150px;
+    }
+    .shoes .big-box .shoe-box .content{
+        padding-left: 20px;
+        font-size: 17px;
+    }
+    .content .brand{
+        font-size: 18px;
+    }
+    .prize{
+        font-size: 17px;
+    }
+    .offer{
+        font-size: 16px;
+    }
+    .hot{
+        font-size: 15px;
+        padding: 5px 5px;
+        padding-top: 1px;
+    }
+    .size .ss{
+        font-size: 16px;
+    }
+    .size .size-no{
+        font-size: 15px;
+    }
+    .size{
+        padding-top: 5px;
+    }
+
+}
+/*----------shoe end-----*/
+
+/*----------fashion start-----*/
+
+.fashion{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.best-fas{
+    margin-top: 30px;
+}
+
+.best-fas p{
+    font-size: 30px;
+    font-family: 'Roboto' ;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-top: 30px;
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+.fashion .fas-big-box .fas-box{
+    height: 300px;
+    width: 210px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.2s ease;
+}
+
+.fashion .fas-big-box{
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    display: flex; /* Use flexbox to align the products in a row */
+    gap: 20px; /* Space between products */
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    overflow-y: hidden;  /* Allow vertical scrolling */
+    white-space: nowrap; /* Ensure products stay in a single line */
+
+    
+}
+
+.fas-big-box .fas-box:hover{
+    box-shadow: 0,3px 5px rgba(0,0,0,0.2);
+    transform: scale(1.1); 
+    transition: all 0.2s linear;
+}
+
+
+.fashion .fas-big-box .fas-box img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.fashion .fas-big-box .fas-box .content{
+    padding-left: 20px;
+    font-family: 'Roboto';
+    padding-top: 10px;
+}
+
+.fas-box .fas-content .fas-brand p{
+    color: black;
+    font-weight: 500;
+    opacity: 1;
+    font-size: 21px;
+    letter-spacing: 1px;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+}
+
+.fas-prize{
+    font-size: 22px;
+    padding-top: 5px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+@media screen and (max-width:576px) {
+    .fashion{
+        margin: 0;
+        
+    }
+    .fashion .fas-big-box{
+        height: 300px;
+        width: 100%;
+    }
+    .best-fas{
+        margin-top:10px;
+    }
+    .best-fas p{
+        font-size: 20px;
+    }
+    .fashion .fas-big-box .fas-box{
+        height: 250px;
+        width: 190px;
+        margin-left: 1px;
+        padding: 0;
+    }
+    .fashion .fas-big-box .fas-box img{
+        height: 150px;
+        width: 150px;
+    }
+    .fas-box .fas-content .fas-brand p{
+        font-size: 19px;
+        font-family: 'Roboto';
+        padding-top: 5px;
+    }
+    .fas-prize{
+        font-size: 20px;
+    }
+    
+}
+
+/*electronic start---*/
+.electronics{
+
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Roboto';
+}
+
+.electronics .ele-best{
+    background-color: white;
+    margin-top: 20px;
+}
+
+.ele-best p{
+    font-size: 30px;
+    font-family: 'Roboto' ;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-top: 30px;
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+
+.electronics .electronics-big-box{
+    height: 390px;
+    width: 100%;
+    background-color:white;
+    display: flex; /* Use flexbox to align the products in a row */
+    gap: 20px; /* Space between products */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden;
+    white-space: nowrap; /* Ensure products stay in a single line */
+}
+
+.electronics .electronics-big-box .ele-box{
+    padding-top: 10px;
+    height: 330px;
+    width: 230px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.2s ease;
+    margin-bottom: 5px;
+    
+}
+
+.ele-box img{
+    padding: 10px;
+}
+
+
+.ele-content .ele-brand p{
+    font-size: 19px;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ele-content .ele-prize p{
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 450;
+    color: rgb(1, 107, 1) ;
+}
+
+.ele-content .company p{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #888;
+    opacity: 0.8;
+}
+
+.electronics-big-box .ele-box:hover{
+    box-shadow: 0,3px 5px rgba(0,0,0,0.2);
+    transform: scale(1.1); 
+    transition: all 0.2s linear;
+}
+@media screen and (max-width:576px) {
+    .electronics{
+        margin: 0;
+        
+    }
+    .electronics .electronics-big-box{
+        height: 320px;
+        width: 100%;
+    }
+    .best-fas{
+        margin-top:10px;
+    }
+    .ele-best p{
+        font-size: 20px;
+    }
+    .electronics .electronics-big-box .ele-box{
+        height: 280px;
+        width: 190px;
+        margin-left: 1px;
+        padding: 0;
+    }
+    .ele-box img{
+        height: 150px;
+        width: 150px;
+    }
+    .ele-content .ele-brand p{
+        font-size: 18px;
+    }
+    .ele-content .ele-prize p{
+        font-size: 17px;
+    }
+    .ele-content .company p{
+        font-size: 16px;
+    }
+    
+}
+
+.content-three{
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
+}
+.content-three p{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-left: 5px;
+
+}
+.three-box {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    
+}
+
+.three-box .first-box{
+    height: 700px;
+    width: 500px;
+    background-color: white;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    margin-right: 20px;
+}
+
+.first-box .winter-box{
+    height: 300px;
+    width: 210px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.2s ease;
+}
+.first-box .winter-box img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.first-box .winter-box:hover{
+    transform: scale(1.1);
+    transition: 0.2s linear;
+}
+.winter-box .win-content{
+    text-align: center;
+    
+}
+
+.winter-box .win-content .win-brand p{
+    font-size: 21px;
+    font-family: 'Roboto';
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.winter-box .win-content .win-offer p{
+    color: rgb(1, 107, 1) ;
+    padding-top: 5px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.three-box .second-box{
+   
+    height: 700px;
+    width: 500px;
+    background-color: white;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    margin-right: 20px;
+}
+
+.second-box .end-box{
+    
+    height: 300px;
+    width: 210px;
+    background-color: white;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.2s ease;
+}
+.second-box .end-box img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.second-box .end-box:hover{
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+.end-box .end-content{
+    text-align: center;
+    
+}
+
+.end-box .end-content .end-brand p{
+    font-size: 21px;
+    font-family: 'Roboto';
+    padding-top: 5px;
+    font-weight: 600;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 14px;
+}
+
+.end-box .end-content .end-offer p{
+    color: rgb(1, 107, 1) ;
+    padding-top: 5px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.third-box{
+    height: 670px;
+    width: 400px;
+    background-color: #ffffff;
+    margin-right: 40px;
+
+}
+
+.third-box .image-iphone img{
+    object-fit: cover;
+    width: 400px;
+    height: 670px;
+}
+@media screen and (max-width:576px) {
+    .content-three{
+        margin: 0;
+        padding: 0;
+    }
+    .content-three p{
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+    .three-box {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .three-box .first-box{
+        height: 600px;
+        width: 100%;
+    }
+    .best-fas{
+        margin: 0;
+    }
+    .ele-best p{
+        font-size: 20px;
+    }
+    .first-box .winter-box{
+        height: 240px;
+        width: 190px;
+        margin-left: 1px;
+        padding: 0;
+    }
+    .first-box .winter-box img{
+        height: 150px;
+        width: 150px;
+    }
+    .winter-box .win-content .win-brand p{
+        font-size: 18px;
+    }
+    .winter-box .win-content .win-offer p{
+        font-size: 17px;
+    }
+    .three-box .second-box{
+        height: 600px;
+        width: 100%;
+    }
+    .three-box .first-box{
+        height: 700px;
+        width: 100%;
+    }
+    .best-fas{
+        margin-top:10px;
+    }
+    .ele-best p{
+        font-size: 20px;
+    }
+    .second-box .end-box{
+        height: 240px;
+        width: 190px;
+        margin-left: 1px;
+        padding: 0;
+    }
+    .second-box .end-box img{
+        height: 150px;
+        width: 150px;
+    }
+    .end-box .end-content .end-brand p{
+        font-size: 18px;
+    }
+ 
+    .end-box .end-content .end-offer p{
+        font-size: 17px;
+    }
+    .third-box{
+        margin: 0;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .third-box .image-iphone img{
+        width: 400px;
+    }
+
+}
+/*-------------footer-----------*/
+.footer{
+    background-color: #222;
+    text-align: center;
+}
+.social-icons svg{
+    margin-top: 15px;
+    height: 32px;
+    width: 32px;
+    fill: white;
+    margin-right: 1rem;
+}
+
+.social-icons svg:hover{
+    fill: rgb(0, 94, 255);
+}
+.footer-text {
+    color: white;
+    margin-top: 7px;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+
+
